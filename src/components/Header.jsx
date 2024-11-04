@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import { FaHome, FaUser, FaProjectDiagram, FaTools, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,11 +17,11 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Contact', path: '/contact' },
+    { name: <FaHome />, path: '/' },
+    { name: <FaUser />, path: '/about' },
+    { name: <FaProjectDiagram />, path: '/projects' },
+    { name: <FaTools />, path: '/skills' },
+    { name: <FaEnvelope />, path: '/contact' },
   ];
 
   return (
@@ -34,9 +34,9 @@ const Header = () => {
           
           <nav className="hidden md:flex space-x-6">
             {navItems.map((item) => (
-              <NavLink key={item.name} to={item.path} isActive={location.pathname === item.path}>
+              <Link key={item.name} to={item.path} className={`flex items-center ${location.pathname === item.path ? 'text-gray-800' : 'text-gray-600'}`}>
                 {item.name}
-              </NavLink>
+              </Link>
             ))}
           </nav>
 
@@ -67,12 +67,12 @@ const Header = () => {
             className="md:hidden py-4 space-y-2"
           >
             {navItems.map((item) => (
-              <NavLink key={item.name} to={item.path} isActive={location.pathname === item.path} onClick={() => setIsMenuOpen(false)}>
+              <Link key={item.name} to={item.path} className={`flex items-center ${location.pathname === item.path ? 'text-gray-800' : 'text-gray-600'}`} onClick={() => setIsMenuOpen(false)}>
                 {item.name}
-              </NavLink>
+              </Link>
             ))}
             <div className="flex space-x-4 pt-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <a href="https://github.com/Ysen0603?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
                 <FaGithub size={24} />
               </a>
               <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
@@ -83,18 +83,6 @@ const Header = () => {
         )}
       </div>
     </header>
-  );
-};
-
-const NavLink = ({ to, children, isActive, onClick }) => {
-  return (
-    <Link 
-      to={to} 
-      onClick={onClick}
-      className={`block text-gray-600 hover:text-gray-800 transition-colors duration-300 ${isActive ? 'font-semibold' : ''}`}
-    >
-      {children}
-    </Link>
   );
 };
 

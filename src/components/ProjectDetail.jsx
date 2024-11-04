@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ProjectDetail = ({ project }) => {
   const [activeTab, setActiveTab] = useState('overview');
 
-  const tabs = ['overview', 'challenges', 'tech-stack', 'gallery'];
+  const tabs = ['overview', 'challenges', 'tech-stack'];
 
   return (
     <section className="py-20 relative z-10">
@@ -87,16 +87,7 @@ const ProjectDetail = ({ project }) => {
               </div>
             )}
 
-            {activeTab === 'gallery' && (
-              <div>
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800">Project Gallery</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {project.gallery.map((image, index) => (
-                    <img key={index} src={image} alt={`Project screenshot ${index + 1}`} className="w-full h-48 object-cover rounded-lg hover:opacity-75 transition-opacity duration-300" />
-                  ))}
-                </div>
-              </div>
-            )}
+
           </motion.div>
         </AnimatePresence>
 

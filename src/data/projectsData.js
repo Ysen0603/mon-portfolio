@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Intelligent System for Project Classification",
-    description: "A machine learning-based system designed to classify projects according to Sustainable Development Goals (SDGs), impact areas, and transitions using Natural Language Processing (NLP).",
+    description: "A machine learning-based system designed to classify projects according to Sustainable Development Goals (SDGs), impact areas, and transitions using Natural Language Processing (NLP), A Web APP using FASTAPI and REACT.",
     technologies: [
       {
         name: "Python",
@@ -24,6 +24,10 @@ export const projectsData = [
         name: "FastAPI",
         image: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
       },
+      {
+        name: "React",
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      }
     ],
     image: "https://images.prismic.io/turing/652ebe6bfbd9a45bcec81881_Natural_Language_Processing_Functionality_in_AI_95cadec9bc.webp?auto=format,compress",
     features: [
@@ -44,12 +48,8 @@ export const projectsData = [
         solution: "Development of a RESTful API using FastAPI for model deployment."
       }
     ],
-    gallery: [
-      "/images/nlp-project-classification.jpg",
-      "/images/nlp-project-dashboard.jpg",
-      "/images/nlp-project-results.jpg"
-    ],
-    link: "https://github.com/YassineEnnaya/project-classification"
+    
+    link: "https://github.com/Ysen0603/odd_di_tf_app"
   },
   {
     id: 2,
@@ -92,57 +92,57 @@ export const projectsData = [
         solution: "Optimization of the model using YOLOv8 for faster inference."
       }
     ],
-    gallery: [
-      "/images/emotion-detection-dashboard.jpg",
-      "/images/emotion-detection-analysis.jpg",
-      "/images/emotion-detection-results.jpg"
-    ],
-    link: "https://github.com/YassineEnnaya/emotion-detection"
+    
+    link: "https://github.com/Ysen0603/YOLOV8_Emotions"
   },
   {
-    id: 3,
-    title: "GAN-based Image Generation",
-    description: "A project that explores the use of Generative Adversarial Networks (GANs) to generate realistic images.",
-    technologies: [
-      {
-        name: "TensorFlow",
-        image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
-      },
-      {
-        name: "Keras",
-        image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg",
-      },
-      {
-        name: "Python",
-        image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-      },
+    "id": 3,
+    "title": "Matcher CV Application",
+    "description": "A dynamic CV matcher application that leverages React for the frontend and FastAPI for the backend, utilizing Gemini for advanced analysis of job descriptions and CVs.",
+    "technologies": [
+        {
+            "name": "React",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        },
+        {
+            "name": "FastAPI",
+            "image": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+        },
+        {
+            "name": "Gemini",
+            "image": "https://example.com/images/gemini-logo.png" // Placeholder
+        },
+        {
+            "name": "NLP",
+            "image": "https://example.com/images/nlp-logo.png" // Placeholder
+        }
     ],
-    image: "https://c02.purpledshub.com/uploads/sites/41/2022/10/GANSpreview-tb-f1fb529.jpg?w=1029&webp=1",
-    features: [
-      "Generation of high-quality images",
-      "Training on custom datasets",
-      "Visualization of GAN learning progress",
-      "Comparison between generated and real images"
+    "image": "https://f.hellowork.com/helloworkplace/2021/02/recrutement_matching_cv.jpg", // Placeholder for app screenshot
+    "features": [
+        "Seamless integration of job descriptions and CVs",
+        "Real-time matching and scoring of applicants",
+        "User-friendly interface for uploading CVs and job descriptions",
+        "Detailed analysis and feedback on applicant suitability"
     ],
-    challenges: [
-      {
-        title: "Training Stability",
-        description: "Maintaining stable training of the GANs to avoid mode collapse.",
-        solution: "Application of techniques like batch normalization and Wasserstein loss."
-      },
-      {
-        title: "Quality of Generated Images",
-        description: "Enhancing the quality and realism of the generated images.",
-        solution: "Tuning the GAN architecture and using advanced loss functions."
-      }
+    "challenges": [
+        {
+            "title": "Data Accuracy",
+            "description": "Ensuring the accurate extraction and interpretation of data from diverse CV formats.",
+            "solution": "Implementation of robust parsing algorithms and data validation techniques."
+        },
+        {
+            "title": "Scalability",
+            "description": "Handling increased loads of job descriptions and CV submissions efficiently.",
+            "solution": "Adoption of asynchronous processing with FastAPI and optimization of backend services."
+        }
     ],
-    gallery: [
-      "/images/gan-image-gallery.jpg",
-      "/images/gan-training-progress.jpg",
-      "/images/gan-comparison.jpg"
+    "gallery": [
+        "https://example.com/images/matcher-cv-screenshot1.png", // Placeholder for screenshots
+        "https://example.com/images/matcher-cv-screenshot2.png",
+        "https://example.com/images/matcher-cv-screenshot3.png"
     ],
-    link: "https://github.com/YassineEnnaya/gan-image-generation"
-  },
+    "link": "https://github.com/Ysen0603/CV"
+},
   {
     id: 4,
     title: "Security System Using Facial Recognition",
@@ -184,59 +184,55 @@ export const projectsData = [
         solution: "Custom API development for smooth communication with other systems."
       }
     ],
-    gallery: [
-      "/images/facial-recognition-dashboard.jpg",
-      "/images/facial-recognition-integration.jpg",
-      "/images/facial-recognition-results.jpg"
-    ],
-    link: "https://github.com/YassineEnnaya/facial-recognition-security"
+    
+    link: "https://github.com/Ysen0603/Face_recognition"
   },
   {
-    id: 5,
-    title: "Intelligent PDF Analysis Application",
-    description: "A smart PDF analysis tool using a Large Language Model (LLM) and Streamlit, capable of extracting and summarizing key information.",
-    technologies: [
+    "id": 5,
+    "title": "Social Connect App",
+    "description": "A mobile social networking app built with React Native and Expo, providing user profiles, and posts. The backend is powered by FastAPI, ensuring fast and reliable API services.",
+    "technologies": [
       {
-        name: "Python",
-        image: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+        "name": "React Native",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
       },
       {
-        name: "Streamlit",
-        image: "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",
+        "name": "Expo",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Expo.svg"
       },
       {
-        name: "Gemini",
-        image: "https://example.com/images/gemini-logo.png", // Placeholder
+        "name": "FastAPI",
+        "image": "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
       },
       {
-        name: "NLP",
-        image: "https://example.com/images/nlp-logo.png", // Placeholder
-      },
-    ],
-    image: "https://www.pdfgear.com/chat-pdf/img/best-ai-pdf-analyzers-1.png",
-    features: [
-      "Extraction of text and key information",
-      "Automatic summarization",
-      "User-friendly interface for uploading and analyzing PDFs",
-      "Support for various document formats"
-    ],
-    challenges: [
-      {
-        title: "Accurate Information Extraction",
-        description: "Ensuring precise extraction of relevant information from diverse PDF formats.",
-        solution: "Use of advanced NLP techniques and LLM capabilities."
-      },
-      {
-        title: "Summarization Quality",
-        description: "Producing concise and accurate summaries of extracted content.",
-        solution: "Tuning the LLM for optimal performance on document summarization tasks."
+        "name": "WebSocket",
+        "image": "https://example.com/images/websocket-logo.png" // Placeholder for WebSocket logo
       }
     ],
-    gallery: [
-      "/images/pdf-analysis-dashboard.jpg",
-      "/images/pdf-analysis-summary.jpg",
-      "/images/pdf-analysis-upload.jpg"
+    "image": "https://www.addevice.io/storage/ckeditor/uploads/images/6597be3d2e997_how.to.make.a.social.media.app.png", // Placeholder image for the app screenshot
+    "features": [
+      "Real-time Notifications with WebSocket",
+      "User authentication (OAuth and JWT)",
+      "Post creation with images,videos and text",
+      "User profiles with avatars and bios",
+      
+      "Follow system for connecting with friends",
+      "Dark mode"
     ],
-    link: "https://github.com/YassineEnnaya/pdf-analysis"
+    "challenges": [
+      {
+        "title": "Real-time Notifications",
+        "description": "Implementing efficient and scalable real-time messaging.",
+        "solution": "WebSocket integration with FastAPI for real-time Notifications, ensuring low latency."
+      },
+      {
+        "title": "User Authentication and Security",
+        "description": "Securing user data and managing authentication in a seamless manner.",
+        "solution": "JWT-based authentication for secure API access, with encrypted user data."
+      }
+    ],
+    
+    "link": "https://github.com/Ysen0603/React_app"
   }
+  
 ];

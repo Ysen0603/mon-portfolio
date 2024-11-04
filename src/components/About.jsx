@@ -13,6 +13,7 @@ const About = ({ title, description, skills, experiences, education, interests }
         >
           {title}
         </motion.h2>
+        
         <motion.p 
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
