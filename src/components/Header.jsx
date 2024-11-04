@@ -75,7 +75,7 @@ const Header = () => {
               <a href="https://github.com/Ysen0603?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
                 <FaGithub size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <a href="www.linkedin.com/in/yassine-ennaya-07aab71b5" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
                 <FaLinkedin size={24} />
               </a>
             </div>
