@@ -64,18 +64,20 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden py-4 space-y-2"
+            className="md:hidden pt-4 bg-gray-800 bg-opacity-90 rounded-lg py-4 flex items-center justify-center flex-col space-y-4"
           >
+            <div className="flex pt-4 space-x-8">
             {navItems.map((item) => (
-              <Link key={item.name} to={item.path} className={`flex items-center ${location.pathname === item.path ? 'text-gray-800' : 'text-gray-600'}`} onClick={() => setIsMenuOpen(false)}>
+              <Link key={item.name} to={item.path} className={` ${location.pathname === item.path ? 'text-teal-500' : 'text-white'}`} onClick={() => setIsMenuOpen(false)}>
                 {item.name}
               </Link>
             ))}
-            <div className="flex space-x-4 pt-4">
-              <a href="https://github.com/Ysen0603?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+            </div>
+            <div className="flex pt-4  items-center space-x-8">
+              <a href="https://github.com/Ysen0603?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-white hover:text-teal-500 transition-colors duration-300">
                 <FaGithub size={24} />
               </a>
-              <a href="www.linkedin.com/in/yassine-ennaya-07aab71b5" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors duration-300">
+              <a href="www.linkedin.com/in/yassine-ennaya-07aab71b5" target="_blank" rel="noopener noreferrer" className="text-white hover:text-teal-500 transition-colors duration-300">
                 <FaLinkedin size={24} />
               </a>
             </div>
