@@ -46,7 +46,7 @@ const Home = () => {
 
   const projects = projectsData;
 
-  const skills = ["Python", "TensorFlow", "Keras", "FastAPI", "OpenCV", "Streamlit"];
+  const skills = ["JavaScript", "Python", "FastAPI", "React", "React Native", "NextJS", "Expo", "HTML5", "CSS3", "Git", "VScode", "Jupyter Notebook", "Linux",];
 
   return (
     <div className="min-h-screen bg-white text-gray-900 overflow-hidden">

@@ -5,19 +5,19 @@ import { motion } from 'framer-motion';
 const AboutPage = () => {
   const aboutData = {
     title: "About Me",
-    description: "I am Mr. Ennaya Yassine, an engineer specializing in Information Systems Intelligence. My expertise lies in machine learning, deep learning, data manipulation, and analysis. With a strong foundation in Natural Language Processing (NLP) and computer vision, I am passionate about developing intelligent systems and solutions.",
+    description: 'Yassine Ennaya, information systems intelligence engineer (SUPMTI). Specialized in data analysis, NLP and computer vision. Experienced in Machine Learning and Deep Learning with Pandas, Numpy, Sklearn, Tensorflow. Web developer (FastAPI, React) combining AI and development for innovative solutions.',
     skills: [
-      "Python", "Machine Learning", "Deep Learning", "NLP", 
-      "TensorFlow", "Keras", "OpenCV", "FastAPI", 
-      "Pandas", "Numpy", "Scikit-Learn", "Streamlit", 
-      "Power BI", "GIT/GitHub", "Linux (Ubuntu)", "JIRA Agile"
+      "JavaScript","Python","React", "Machine Learning", "NLP", 
+      "TensorFlow","FastAPI", 
+      "Pandas", "Numpy", "Scikit-Learn", "React Native", "Expo", 
+      "HTML5", "CSS3", "PostgreSQL", "MongoDB", "Github", "GIT/GitHub", "Linux (Ubuntu)", "JIRA Agile"
     ],
     experiences: [
       {
         title: "Intern - Final Year Project (PFE)",
         company: "Direction Générale des Collectivités Territoriales",
         period: "2023 - 2024",
-        description: "Designed and implemented an intelligent system for classifying projects based on Sustainable Development Goals (SDGs), impact areas, and transitions, utilizing NLP techniques."
+        description: "Designed and implemented an intelligent system for classifying projects based on Sustainable Development Goals (SDGs), impact areas, and transitions, utilizing NLP techniques and a web app using FastApi and React.",
       },
       {
         title: "Intern - Practical Training (PFA)",
@@ -48,7 +48,7 @@ const AboutPage = () => {
         year: "2015 - 2018"
       }
     ],
-    interests: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Web Development"]
+    interests: ["Web Development","Mobile Development","Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", ]
   };
   
   return (

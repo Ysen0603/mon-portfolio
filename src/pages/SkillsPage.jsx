@@ -8,22 +8,22 @@ const SkillsPage = () => {
     description: "An overview of my technical expertise and areas of specialization.",
     skillCategories: {
       "Programming Languages": [
-        "Python", "JavaScript (ES6+)", "C++", "Java", "SQL"
+        "Python", "JavaScript "
       ],
       "Machine Learning & AI": [
-        "TensorFlow", "Keras", "Scikit-Learn", "YOLOv8", "PyTorch"
+        "TensorFlow", "Keras", "Scikit-Learn", "YOLOv8"
       ],
       "Data Analysis & Visualization": [
-        "Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"
+        "Pandas", "NumPy", "Matplotlib", "Seaborn"
       ],
-      "Web Development": [
-        "FastAPI", "Django", "Flask", "Streamlit", "HTML5", "CSS3"
+      "Web/mobile Development": [
+        "React","NextJS","React Native","Expo","FastAPI","HTML5", "CSS3"
       ],
       "Tools & Platforms": [
-        "Git", "Docker", "Jupyter Notebook", "Linux", "AWS"
+        "Git", "VScode", "Jupyter Notebook", "Linux"
       ],
       "Others": [
-        "NLP", "RESTful APIs", "Object Detection", "GANs", "Version Control"
+        "NLP", "RESTful APIs", "Object Detection", "LLM", "PostgreSQL", "MongoDB", "Github"
       ]
     },
     

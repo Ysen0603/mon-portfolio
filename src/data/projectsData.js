@@ -161,9 +161,9 @@ export const projectsData = [
         image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
       },
       {
-        name: "Dlib",
-        image: "https://dlib.net/images/dlib-logo.png", // Placeholder
-      },
+        name: "Keras",
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg",
+      }
     ],
     image: "https://securitytoday.com/-/media/SEC/Security-Products/Images/2020/06/facial_recognition.jpg",
     features: [
